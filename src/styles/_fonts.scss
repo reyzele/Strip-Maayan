@@ -1,7 +1,15 @@
 @font-face {
-  font-family: 'handlee';
-  src: url('../fonts/handlee-regular-webfont.woff2') format('woff2'),
-        url('../fonts/handlee-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'narkistammflight';
+    src: url('../fonts/narkistam-light-webfont.woff2') format('woff2'),
+         url('../fonts/narkistam-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baloramfmedium';
+    src: url('../fonts/balora-medium-webfont.woff2') format('woff2'),
+         url('../fonts/balora-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
