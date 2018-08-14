@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nconsole.log('test');\n\n//# sourceURL=webpack:///./src/scripts/main.js?");
+eval("\n\nvar Proto = document.querySelector(\"#Proto\");\nvar protoWrap = document.querySelector(\".proto-wrap\");\nvar proto_ = document.querySelector(\".protoio-embed-prototype\");\nvar typography = document.querySelector(\".typography\");\nvar phoneImage = document.querySelector(\".typography__img\");\n\nphoneImage.style.display = \"none\";\n\nwindow.onload = function () {\n  proto_.style.display = \"none\";\n  proto_.style.opacity = \"1\";\n  phoneImage.style.display = \"inherit\";\n\n  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {\n    Proto.addEventListener(\"click\", handleMobile);\n  } else {\n    Proto.addEventListener(\"click\", handleDesk);\n  }\n};\n\nfunction handleDesk(e) {\n  e.preventDefault();\n\n  if (document.documentElement.clientWidth < 768) {\n    proto_.style.top = \"-12%\";\n  } else if (document.documentElement.clientWidth < 992) {\n    protoWrap.style.marginBottom = \"-200px\";\n  } else if (document.documentElement.clientWidth < 1200) {\n    protoWrap.style.marginBottom = \"-101px\";\n  }\n\n  typography.style.padding = \"0\";\n  phoneImage.style.display = \"none\";\n  proto_.style.display = \"block\";\n}\n\nfunction handleMobile(e) {\n  e.preventDefault();\n  console.log(\"mobile\");\n\n  proto_.style.display = \"block\";\n  proto_.classList.add(\"phones\");\n  proto_.style.height = \"auto\";\n  proto_.style.top = \"0\";\n}\n\n//# sourceURL=webpack:///./src/scripts/main.js?");
 
 /***/ })
 
