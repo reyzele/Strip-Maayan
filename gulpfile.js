@@ -22,7 +22,6 @@ gulp.task("styles", () => {
       .pipe($gp.sourcemaps.init())
       .pipe(
         $gp.sass({
-          outputStyle: "compressed",
           importer: moduleImporter()
         })
       )
@@ -38,7 +37,6 @@ gulp.task("styles", () => {
         })
       )
       .pipe($gp.sourcemaps.write())
-      .pipe($gp.rename({ suffix: ".min" }))
       .pipe(gulp.dest(`${DIST_DIR}/styles/`))
       .pipe(reload({ stream: true }))
   );
