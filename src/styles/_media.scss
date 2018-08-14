@@ -87,6 +87,10 @@
     font-size: 24px;
     min-height: 485px;
   }
+
+  .protoio-embed-prototype {
+    top: -104px;
+  }
 }
 
 // ≥992px
@@ -133,6 +137,10 @@
   .footer {
     font-size: 24px;
     min-height: 330px;
+  }
+
+  .protoio-embed-prototype {
+    top: -198px;
   }
 }
 
@@ -207,7 +215,9 @@
   }
 
   .typography__img {
-    top: -48px;
+    position: relative;
+    top: -92px;
+    margin: auto;
   }
 
   .typography__title {
@@ -234,7 +244,7 @@
   }
   
   .colors {
-    margin-bottom: 60px;
+    margin-bottom: 20%;
   }
 
   .icons {
@@ -245,12 +255,12 @@
     margin-bottom: 0;
   }
 
-  .typography .col-12.col-sm-6 {
-    text-align: center;
+  .typography__img { 
+    top: -11%;
   }
 
-  .typography__img {
-    display: none;
+  .typography .col-12.col-sm-6 {
+    text-align: center;
   }
 
   .footer__pic {

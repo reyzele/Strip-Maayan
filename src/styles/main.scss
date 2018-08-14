@@ -240,6 +240,10 @@ p {
   position: absolute;
   width: 100%;
   right: -25%;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .typography__desc {
@@ -333,6 +337,25 @@ p {
   to {
      transform: rotateX(360deg);
   }
+}
+
+.protoio-embed-prototype {
+  position: relative;
+  top: -101px;
+  opacity: 0;
+}
+
+.phones {
+  z-index: 1000000;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  display: block;
 }
 
 @import "media"; // Always at the end

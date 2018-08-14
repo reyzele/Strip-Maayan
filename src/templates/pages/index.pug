@@ -43,10 +43,12 @@ block content
       section.typography
         .container
           .row
-            .col-12.col-sm-6
+            .col-12.col-md-6.proto-wrap
               .typography__img
-                img(src="./images/tel.png", alt="Tel")
-            .col-12.col-sm-6
+                img(src="./images/tel.png", alt="Tel")#Proto
+              div(class="protoio-embed-prototype" data-code="GWQCKT" data-show-sidebuttons="light" style="width: 100%; height: 800px;") 
+              script(async src="https://static.proto.io/api/widget-embed.js")
+            .col-12.col-md-6
               .section__title.typography__title 
                 span.cap ט
                 span יפוגרפיה
