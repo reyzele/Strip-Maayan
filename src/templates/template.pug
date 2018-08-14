@@ -2,7 +2,7 @@ include ./config/mixin
 include ./config/var
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Smart Cool'
 
 doctype html
 html
@@ -13,9 +13,15 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(content="" name="keywords")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico')
+    link(rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png")
     link(rel='stylesheet' href='./styles/main.min.css')
     link(href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet")
     script(src='./scripts/main.bundle.js' defer)
-  body
+  body.fixed
+    .preloader#page-preloader
+      .loader-1
+      .loader-2
+      .loader-3
+      span(id='load_perc') 0%
+
     block content
