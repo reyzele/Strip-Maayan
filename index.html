@@ -2,17 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home page</title>
+    <title>Smart Cool</title>
     <meta content="" name="description">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
     <link rel="stylesheet" href="./styles/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <script src="./scripts/main.bundle.js" defer></script>
   </head>
-  <body>
+  <body class="fixed">
+    <div class="preloader" id="page-preloader">
+      <div class="loader-1"></div>
+      <div class="loader-2"></div>
+      <div class="loader-3"></div><span id="load_perc">0%</span>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="header__bg"></div>
